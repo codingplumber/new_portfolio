@@ -7,6 +7,7 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  padding-top: 19px;
 }
 
 a {
@@ -18,7 +19,7 @@ a {
   width: 80px;
   display: flex;
   justify-content: space-between;
-  margin-bottom: 12px;
+  margin-bottom: 15px;
 }
 
 .icon {
@@ -26,5 +27,5 @@ a {
 }
 
 .codewars {
-  margin-bottom: 12px;
+  margin-bottom: 15px;
 }
