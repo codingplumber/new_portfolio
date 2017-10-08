@@ -1,0 +1,31 @@
+.header {
+  width: 100%;
+  padding: 13px;
+  background-color: rgba(255, 255, 255, 0.95);
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  z-index: 5;
+  color: #323d42;
+  font-size: 16px;
+  border-bottom: 1px solid #f1f1f1;
+}
+
+.header-name {
+  font-weight: bold;
+  letter-spacing: -0.5px;
+}
+
+.header-links {
+  display: none;
+  width: 45%;
+}
+
+.header-links > ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-links > ul > li {
+  cursor: pointer;
+}

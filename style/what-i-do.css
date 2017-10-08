@@ -1,0 +1,15 @@
+.what-i-do {
+	position: relative;
+	background: url(".././images/overlay.png"), url(".././images/what-i-do.jpg");
+  background-size: cover;
+  background-repeat: repeat, no-repeat;
+}
+
+div.what-desc p:nth-of-type(1) {
+  margin-bottom: 22px;
+}
+
+.here {
+	text-decoration: underline;
+	cursor: pointer;
+}

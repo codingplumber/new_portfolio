@@ -1,0 +1,6 @@
+.who-i-am {
+	position: relative;
+	background: url(".././images/overlay.png"), url(".././images/who-i-am.jpg");
+  background-size: cover;
+  background-repeat: repeat, no-repeat;
+}
