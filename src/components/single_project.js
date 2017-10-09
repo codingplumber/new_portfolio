@@ -5,7 +5,7 @@ const SingleProject = (props) => {
     <li className="gallery-images">
       <img
         src={props.project.img}
-        onClick={props.openModal}
+        onClick={() => props.openModal(props.project)}
       />
     </li>
   );

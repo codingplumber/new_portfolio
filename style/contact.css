@@ -10,7 +10,7 @@
 }
 
 .contact > h3 {
-  padding: 40px 0;
+  padding: 25px 0 40px 0;
   margin-bottom: 0;
 }
 
@@ -90,4 +90,8 @@ form > textarea {
   border: 0;
   font-size: 15px;
   font-weight: 300;
+}
+
+.button > input:hover {
+  background-color: #a8cea4;
 }

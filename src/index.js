@@ -32,8 +32,13 @@ class App extends Component {
     console.log('app: ', this.state.open);
   }
 
-  openModal(event) {
-    this.setState({open: true});
+  openModal(project) {
+    this.setState({
+      open: true,
+      selectedProject: project
+    }, () => {
+      console.log('app: ', project);
+    });
     console.log('app: ', this.state.open);
   }
 

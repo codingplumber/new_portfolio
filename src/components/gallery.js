@@ -2,7 +2,6 @@ import React from 'react';
 import SingleProject from './single_project';
 
 const Gallery = (props) => {
-  console.log('props: ', props)
   const projectItems = props.projects.map(project => {
     return (
       <SingleProject

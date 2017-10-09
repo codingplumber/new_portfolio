@@ -23,7 +23,15 @@ a {
 }
 
 .icon {
+  -moz-transition: background-color 0.2s ease-in-out;
+  -webkit-transition: background-color 0.2s ease-in-out;
+  -ms-transition: background-color 0.2s ease-in-out;
+  transition: background-color 0.2s ease-in-out;
   color: rgba(185, 186, 187, 0.5);
+}
+
+.icon:hover {
+  color: #b9babb;
 }
 
 .codewars {
