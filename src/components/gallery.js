@@ -7,13 +7,11 @@ const Gallery = (props) => {
     return (
       <SingleProject
         key={project.name}
-        image={project.img}
+        project={project}
         openModal={props.openModal}
-        // onClick={props.openModal}
       />
     );
   });
-  console.log('here: ', projectItems)
 
   return (
     <div className="gallery">
@@ -22,12 +20,5 @@ const Gallery = (props) => {
     </div>
   );
 }
-
-// <img
-//   src=".././images/gallery/DixieChickenClone.png"
-//   onClick={this.props.openModal}
-// />
-// <img src=".././images/gallery/StanceClone.png" />
-// <img src=".././images/gallery/DixieChickenClone.png" />
 
 export default Gallery;

@@ -1,11 +1,10 @@
 import React from 'react';
 
 const SingleProject = (props) => {
-  console.log('single: ', props)
   return (
     <li className="gallery-images">
       <img
-        src={props.image}
+        src={props.project.img}
         onClick={props.openModal}
       />
     </li>

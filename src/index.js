@@ -17,10 +17,14 @@ class App extends Component {
 
     this.closeModal = this.closeModal.bind(this);
     this.openModal = this.openModal.bind(this);
+
     this.state = {
       open: false,
-      projects: Service
+      projects: Service,
+      selectedProject: Service[0]
     }
+
+        console.log('selectedProject: ', this.state.selectedProject)
   }
 
   closeModal(event) {
@@ -47,6 +51,7 @@ class App extends Component {
           <Modal
             value={this.state.open}
             closeModal={this.closeModal}
+            project={this.state.selectedProject}
           />
         </div>
         <Header />

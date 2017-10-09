@@ -1,20 +1,16 @@
-import React, { Component } from 'react';
+import React from 'react';
+import ModalDesc from './modal_desc';
 
-class Modal extends Component {
-  constructor(props) {
-    super(props);
-  }
-
-  render() {
-    return(
-      <div className="modal">
-        <div
-          className="modal-close"
-          onClick={this.props.closeModal}
-        />
-      </div>
-    );
-  }
+const Modal = (props) => {
+  return(
+    <div className="modal">
+      <div
+        className="modal-close"
+        onClick={props.closeModal}
+      />
+      <ModalDesc project={props.project} />
+    </div>
+  );
 }
 
 export default Modal;
