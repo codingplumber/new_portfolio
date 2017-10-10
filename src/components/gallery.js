@@ -15,7 +15,7 @@ const Gallery = (props) => {
   return (
     <div className="gallery">
       <h3>My Work</h3>
-      <ul>{projectItems}</ul>
+      <ul className="gallery-images">{projectItems}</ul>
     </div>
   );
 }

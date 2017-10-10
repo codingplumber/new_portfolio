@@ -5,8 +5,8 @@
   position: fixed;
   z-index: 100;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  /*justify-content: center;
+  align-items: center;*/
 }
 
 .modal-close {
@@ -22,6 +22,11 @@
   position: absolute;
   right: 25px;
   top: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 21px;
+  color: #323d42;
 }
 
 div.modal-close:hover {
@@ -34,6 +39,16 @@ div.modal-close:hover {
   background-color: #fff;
   line-height: 22px;
   border-radius: 5px;
+}
+
+.modal-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-img {
+  display: none;
 }
 
 .modal-text {
@@ -70,4 +85,19 @@ div.modal-link:hover {
 .modal-link > a {
   text-decoration: none;
   color: #ffffff;
+}
+
+@media (min-width: 650px) {
+  .modal-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .modal-img {
+    display: block;
+    width: 80%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 15px;
+  }
 }

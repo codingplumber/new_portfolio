@@ -7,9 +7,11 @@ const Contact = () => {
       <div className="box">
         <form method="post" action="https://formspree.io/jason.stickel@live.com">
 
-          <input className="field" type="text" name="name" placeholder="Name" />
+          <div className="contact-personal">
+            <input className="field" type="text" name="name" placeholder="Name" />
 
-          <input className="field" type="email" name="_replyto" placeholder="Email" />
+            <input className="field" type="email" name="_replyto" placeholder="Email" />
+          </div>
 
           <textarea className="field" name="message" placeholder="Message" rows="6"></textarea>
 

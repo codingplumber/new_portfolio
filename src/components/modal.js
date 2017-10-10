@@ -7,8 +7,14 @@ const Modal = (props) => {
       <div
         className="modal-close"
         onClick={props.closeModal}
-      />
-      <ModalDesc project={props.project} />
+      >X</div>
+      <div className="modal-content">
+        <img
+          className="modal-img"
+          src={props.project.img}
+        />
+        <ModalDesc project={props.project} />
+      </div>
     </div>
   );
 }

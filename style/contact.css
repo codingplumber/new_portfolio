@@ -95,3 +95,10 @@ form > textarea {
 .button > input:hover {
   background-color: #a8cea4;
 }
+
+@media (min-width: 650px) {
+  .contact-personal {
+    display: flex;
+    justify-content: space-between;
+  }
+}

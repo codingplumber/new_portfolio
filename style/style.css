@@ -41,6 +41,10 @@ h3 {
 }
 
 .arrow {
+  -moz-transition: background-color 0.2s ease-in-out;
+  -webkit-transition: background-color 0.2s ease-in-out;
+  -ms-transition: background-color 0.2s ease-in-out;
+  transition: background-color 0.2s ease-in-out;
   border: solid 2px #e5e6e7;
   height: 5em;
   width: 5em;
@@ -50,9 +54,39 @@ h3 {
   overflow: hidden;
 }
 
+.arrow:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
 .arrow-bottom {
   display: none;
   border-radius: 3em 3em 0 0;
   position: absolute;
   bottom: 0;
+  border-bottom: none;
+}
+
+@media (min-width: 450px) {
+  .desc {
+    padding: 25px 24px;
+    font-size: 18px;
+    line-height: 27px;
+  }
+
+  h3 {
+    font-size: 35px;
+    letter-spacing: -2.5px;
+  }
+
+  .arrow {
+    height: 6em;
+    width: 6em;
+    background-size: 48px;
+  }
+}
+
+@media (min-width: 650px) {
+  .arrow-bottom {
+    display: block;
+  }
 }

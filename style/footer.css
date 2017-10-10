@@ -37,3 +37,7 @@ a {
 .codewars {
   margin-bottom: 15px;
 }
+
+@media (min-width: 650px) {
+  
+}
