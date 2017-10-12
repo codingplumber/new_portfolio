@@ -30,15 +30,17 @@
   },
   "dependencies": {
     "babel-preset-stage-1": "^6.1.18",
-    "jquery": "^2.2.4",
     "lodash": "^3.10.1",
-    "react": "^0.14.3",
-    "react-bootstrap": "^0.31.3",
-    "react-dom": "^0.14.3",
+    "react": "^0.14.9",
+    "react-dom": "^0.14.9",
     "react-fontawesome": "^1.6.1",
+    "react-motion": "^0.5.2",
     "react-redux": "4.3.0",
     "react-router": "^2.0.1",
-    "redux": "^3.0.4"
+    "react-smooth-scroll": "^0.1.0",
+    "react-waypoint": "^7.3.1",
+    "redux": "^2.0.0",
+    "styled-components": "^2.2.1"
   },
   "bugs": {
     "url": "https://github.com/codingplumber/new_portfolio/issues"

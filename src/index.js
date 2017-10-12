@@ -1,10 +1,12 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
+import SmoothScroll from 'react-smooth-scroll';
+import { HashHistory } from 'react-router';
 
 import Header from './components/header';
 import Intro from './components/intro';
 import WhatIDo from './components/what_i_do';
-import WhoIAm from './components/who_i_am';
+import WhoIAm from './components/who_i_am/who_i_am';
 import Gallery from './components/gallery';
 import Contact from './components/contact';
 import Footer from './components/footer';
@@ -23,30 +25,23 @@ class App extends Component {
       projects: Service,
       selectedProject: Service[0]
     }
-
-        console.log('selectedProject: ', this.state.selectedProject)
   }
 
   closeModal(event) {
     this.setState({open: false});
-    console.log('app: ', this.state.open);
   }
 
   openModal(project) {
     this.setState({
       open: true,
       selectedProject: project
-    }, () => {
-      console.log('app: ', project);
     });
-    console.log('app: ', this.state.open);
   }
 
   render() {
     const show = {
       display: 'block'
     };
-
     const hide = {
       display: 'none'
     };
@@ -61,7 +56,7 @@ class App extends Component {
         </div>
         <Header />
         <Intro />
-        <WhatIDo />
+        <WhatIDo id="whatIDo" />
         <WhoIAm />
         <Gallery
           value={this.state.open}

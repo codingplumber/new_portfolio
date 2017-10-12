@@ -18,7 +18,9 @@
 
 .header-links {
   display: none;
-  width: 45%;
+  width: 372px;
+  font-weight: 300;
+  font-size: 16px;
 }
 
 .header-links > ul {
@@ -27,5 +29,26 @@
 }
 
 .header-links > ul > li {
+  -moz-transition: background-color 0.2s ease-in-out;
+  -webkit-transition: background-color 0.2s ease-in-out;
+  -ms-transition: background-color 0.2s ease-in-out;
+  transition: background-color 0.2s ease-in-out;
   cursor: pointer;
+}
+
+.header-links > ul > li:hover {
+  color: #bdbdbd;
+}
+
+@media (min-width: 737px) {
+  .header {
+    font-size: 17px;
+    padding: 18px 17px;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .header-links {
+    display: block;
+  }
 }

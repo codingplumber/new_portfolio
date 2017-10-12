@@ -1,6 +1,7 @@
 import React from 'react';
+import { Link } from 'react-router';
 
-const header = () => {
+const header = (props) => {
   return (
     <div className="header">
       <div className="header-name">
@@ -10,14 +11,14 @@ const header = () => {
       <div className="header-links">
         <ul>
           <li>Intro</li>
-          <li>What I do</li>
-          <li>Who I am</li>
-          <li>My Work</li>
-          <li>Contact</li>
+          <li to="/what_i_do">What I do</li>
+          <li to="/who_i_am">Who I am</li>
+          <li to="/gallery">My Work</li>
+          <li to="/contact">Contact</li>
         </ul>
       </div>
     </div>
-  )
+  );
 }
 
 export default header;
