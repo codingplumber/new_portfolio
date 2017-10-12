@@ -1,21 +1,21 @@
 import React from 'react';
 import ModalDesc from './modal_desc';
+import {
+  ModalBackground,
+  Close,
+  Content,
+  Image
+} from '.././styledComponents/modal.style';
 
 const Modal = (props) => {
   return(
-    <div className="modal">
-      <div
-        className="modal-close"
-        onClick={props.closeModal}
-      >X</div>
-      <div className="modal-content">
-        <img
-          className="modal-img"
-          src={props.project.img}
-        />
+    <ModalBackground>
+      <Close onClick={props.closeModal} />
+      <Content>
+        <Image src={props.project.img} />
         <ModalDesc project={props.project} />
-      </div>
-    </div>
+      </Content>
+    </ModalBackground>
   );
 }
 

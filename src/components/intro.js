@@ -1,13 +1,20 @@
 import React from 'react';
+import {
+  IntroBackground,
+  Name,
+  Title,
+  Techs,
+  IntroArrow
+} from '.././styledComponents/intro.style';
 
 const Intro = () => {
   return (
-    <div className="intro main-background">
-      <h1>Jason Stickel</h1>
-      <h6>Full-Stack Web Developer</h6>
-      <p>JavaScript, Angular, React, Node, jQuery, HTML5/CSS3 & RESTful APIs</p>
-      <div className="arrow intro-arrow"></div>
-    </div>
+    <IntroBackground>
+      <Name>Jason Stickel</Name>
+      <Title>Full-Stack Web Developer</Title>
+      <Techs>JavaScript, Angular, React, Node, jQuery, HTML5/CSS3 & RESTful APIs</Techs>
+      <IntroArrow />
+    </IntroBackground>
   );
 }
 

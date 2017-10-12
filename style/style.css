@@ -9,7 +9,20 @@
   font-family: "Source Sans Pro", "sans-serif";
 }
 
-.desc {
+.icon {
+  -moz-transition: background-color 0.2s ease-in-out;
+  -webkit-transition: background-color 0.2s ease-in-out;
+  -ms-transition: background-color 0.2s ease-in-out;
+  transition: background-color 0.2s ease-in-out;
+  color: rgba(185, 186, 187, 0.5);
+}
+
+.icon:hover {
+  color: #b9babb;
+}
+/**/
+
+/*.desc {
   color: #323d42;
   font-weight: 300;
   width: 90%;
@@ -55,7 +68,6 @@ h3 {
   overflow: hidden;
 }
 
-/**/
 .arrow:hover {
   background-color: rgba(255, 255, 255, 0.1);
 }
@@ -91,4 +103,4 @@ h3 {
   .arrow-bottom {
     display: block;
   }
-}
+}*/

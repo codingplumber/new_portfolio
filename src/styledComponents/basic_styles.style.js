@@ -56,6 +56,10 @@ export const Arrow = styled.div`
   background-repeat: no-repeat;
   overflow: hidden;
 
+  &:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+
   @media (min-width: 450px) {
     height: 6em;
     width: 6em;

@@ -1,4 +1,7 @@
-/*.contact {
+import styled, { css } from 'styled-components';
+import { H3 } from '.././styledComponents/basic_styles.style';
+
+export const ContactBackground = styled.div`
   width: 100%;
   overflow: hidden;
   padding-bottom: 0;
@@ -7,14 +10,14 @@
   align-items: center;
   flex-direction: column;
   background-color: #f5f6f7;
-}*/
+`;
 
-/*.contact > h3 {
+export const ContactH3 = styled(H3)`
   padding: 25px 0 40px 0;
   margin-bottom: 0;
-}*/
+`;
 
-/*.box {
+export const Box = styled.div`
   -moz-transition: -moz-transform 1s ease;
   -webkit-transition: -webkit-transform 1s ease;
   -ms-transition: -ms-transform 1s ease;
@@ -30,13 +33,16 @@
   padding: 15px 15px 35px 15px;
   background: #ffffff;
   color: #39454b;
-}*/
+`;
 
-/*.box > form {
-  width: 100%;
-}*/
+export const UserInfo = styled.div`
+  @media (min-width: 650px) {
+    display: flex;
+    justify-content: space-between;
+  }
+`;
 
-/*.field {
+export const Field = styled.input`
   -moz-appearance: none;
   -webkit-appearance: none;
   -ms-appearance: none;
@@ -55,20 +61,38 @@
   margin-bottom: 18px;
   font-size: 15px;
   color: #323d42;
-}*/
+`;
 
-/*form > textarea {
+export const TextBox = styled.textarea`
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  -moz-transition: border-color 0.2s ease-in-out, color 0.2s ease-in-out;
+  -webkit-transition: border-color 0.2s ease-in-out, color 0.2s ease-in-out;
+  -ms-transition: border-color 0.2s ease-in-out, color 0.2s ease-in-out;
+  transition: border-color 0.2s ease-in-out, color 0.2s ease-in-out;
+  display: block;
+  width: 100%;
+  padding: 12px;
+  background: none;
+  border: solid 2px #e5e6e7;
+  color: inherit;
+  border-radius: 0.5em;
+  margin-bottom: 18px;
+  font-size: 15px;
+  color: #323d42;
   height: 170px;
   resize: none;
-}*/
+`;
 
-/*.button {
+export const BtnContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-}*/
+`;
 
-/*.button > input {
+export const Button = styled.input`
   -moz-appearance: none;
   -webkit-appearance: none;
   -ms-appearance: none;
@@ -88,15 +112,8 @@
   border: 0;
   font-size: 15px;
   font-weight: 300;
-}*/
 
-/*.button > input:hover {
-  background-color: #a8cea4;
-}*/
-
-@media (min-width: 650px) {
-  /*.contact-personal {
-    display: flex;
-    justify-content: space-between;
-  }*/
-}
+  &:hover {
+    background-color: #a8cea4;
+  }
+`;

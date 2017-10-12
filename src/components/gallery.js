@@ -1,5 +1,10 @@
 import React from 'react';
 import SingleProject from './single_project';
+import {
+  GalleryBackground,
+  GalleryH3,
+  GalleryImages
+} from '.././styledComponents/gallery.style';
 
 const Gallery = (props) => {
   const projectItems = props.projects.map(project => {
@@ -13,10 +18,10 @@ const Gallery = (props) => {
   });
 
   return (
-    <div className="gallery">
-      <h3>My Work</h3>
-      <ul className="gallery-images">{projectItems}</ul>
-    </div>
+    <GalleryBackground>
+      <GalleryH3>My Work</GalleryH3>
+      <GalleryImages>{projectItems}</GalleryImages>
+    </GalleryBackground>
   );
 }
 

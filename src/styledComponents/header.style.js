@@ -1,4 +1,6 @@
-/*.header {
+import styled, { css } from 'styled-components';
+
+export const HeaderContainer = styled.div`
   width: 100%;
   padding: 13px;
   background-color: rgba(255, 255, 255, 0.95);
@@ -9,46 +11,44 @@
   color: #323d42;
   font-size: 16px;
   border-bottom: 1px solid #f1f1f1;
-}*/
 
-/*.header-name {
+  @media (min-width: 737px) {
+    font-size: 17px;
+    padding: 18px 17px;
+    align-items: center;
+    justify-content: space-between;
+  }
+`;
+
+export const HeaderName = styled.div`
   font-weight: bold;
   letter-spacing: -0.5px;
-}*/
+`;
 
-/*.header-links {
+export const HeaderLinks = styled.div`
   display: none;
   width: 372px;
   font-weight: 300;
   font-size: 16px;
-}*/
 
-/*.header-links > ul {
+  @media (min-width: 737px) {
+    display: block;
+  }
+`;
+
+export const List = styled.ul`
   display: flex;
   justify-content: space-between;
-}*/
+`;
 
-/*.header-links > ul > li {
+export const Item = styled.li`
   -moz-transition: background-color 0.2s ease-in-out;
   -webkit-transition: background-color 0.2s ease-in-out;
   -ms-transition: background-color 0.2s ease-in-out;
   transition: background-color 0.2s ease-in-out;
   cursor: pointer;
-}*/
 
-/*.header-links > ul > li:hover {
-  color: #bdbdbd;
-}*/
-
-@media (min-width: 737px) {
-  /*.header {
-    font-size: 17px;
-    padding: 18px 17px;
-    align-items: center;
-    justify-content: space-between;
-  }*/
-
-  /*.header-links {
-    display: block;
-  }*/
-}
+  &:hover {
+    color: #bdbdbd;
+  }
+`;

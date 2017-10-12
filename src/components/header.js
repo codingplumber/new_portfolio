@@ -1,23 +1,30 @@
 import React from 'react';
 import { Link } from 'react-router';
+import {
+  HeaderContainer,
+  HeaderName,
+  HeaderLinks,
+  List,
+  Item
+} from '.././styledComponents/header.style'
 
 const header = (props) => {
   return (
-    <div className="header">
-      <div className="header-name">
+    <HeaderContainer>
+      <HeaderName>
         Jason Stickel
-      </div>
+      </HeaderName>
 
-      <div className="header-links">
-        <ul>
-          <li>Intro</li>
-          <li to="/what_i_do">What I do</li>
-          <li to="/who_i_am">Who I am</li>
-          <li to="/gallery">My Work</li>
-          <li to="/contact">Contact</li>
-        </ul>
-      </div>
-    </div>
+      <HeaderLinks>
+        <List>
+          <Item>Intro</Item>
+          <Item to="/what_i_do">What I do</Item>
+          <Item to="/who_i_am">Who I am</Item>
+          <Item to="/gallery">My Work</Item>
+          <Item to="/contact">Contact</Item>
+        </List>
+      </HeaderLinks>
+    </HeaderContainer>
   );
 }
 

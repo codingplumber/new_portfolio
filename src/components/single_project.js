@@ -1,13 +1,17 @@
 import React from 'react';
+import {
+  GalleryImage,
+  Image
+} from '.././styledComponents/single_project.style';
 
 const SingleProject = (props) => {
   return (
-    <li className="gallery-image">
-      <img
+    <GalleryImage>
+      <Image
         src={props.project.img}
         onClick={() => props.openModal(props.project)}
       />
-    </li>
+    </GalleryImage>
   );
 }
 

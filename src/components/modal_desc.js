@@ -1,23 +1,31 @@
 import React from 'react';
+import {
+  ModalDescBackground,
+  Text,
+  Title,
+  ButtonContainer,
+  Button,
+  Link
+} from '.././styledComponents/modal_desc.style';
 
 const ModalDesc = ({project}) => {
   return (
-    <div className="modal-desc">
-      <div className="modal-text">
-        <span className="modal-title">Project:</span> {project.name}
-      </div>
-      <div className="modal-text">
-        <span className="modal-title">Tech:</span> {project.tech}
-      </div>
-      <div className="modal-text">
-        <span className="modal-title">Description:</span> {project.desc}
-      </div>
-      <div className="modal-link-container">
-        <div className="modal-link">
-          <a href={project.link}>Visit the site</a>
-        </div>
-      </div>
-    </div>
+    <ModalDescBackground>
+      <Text>
+        <Title>Project:</Title> {project.name}
+      </Text>
+      <Text>
+        <Title>Tech:</Title> {project.tech}
+      </Text>
+      <Text>
+        <Title>Description:</Title> {project.desc}
+      </Text>
+      <ButtonContainer>
+        <Button>
+          <Link href={project.link}>Visit the site</Link>
+        </Button>
+      </ButtonContainer>
+    </ModalDescBackground>
   );
 };
 

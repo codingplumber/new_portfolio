@@ -1,5 +1,4 @@
 import React, { Component, PropTypes } from 'react';
-
 import WhenInView from './waypoint';
 import {
   Desc,
@@ -7,7 +6,6 @@ import {
   BottomArrow
 } from '.././styledComponents/basic_styles.style';
 import { WhoBackground } from '.././styledComponents/who_i_am.style';
-
 
 class WhoIAm extends Component {
   static propTypes = {};
