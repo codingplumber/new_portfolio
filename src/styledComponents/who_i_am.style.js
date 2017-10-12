@@ -1,9 +1,17 @@
-import styled, {css} from 'styled-components';
+import styled, { css } from 'styled-components';
+import { MainBackground } from './basic_styles.style';
 
-export const Boxer = styled.div`
+export const Box = styled.div`
   height: 100px;
   width: 100px;
   background-color: black;
+`;
+
+export const WhoBackground = styled(MainBackground)`
+  position: relative;
+  background: url(".././images/overlay.png"), url(".././images/who-i-am.jpg");
+  background-size: cover;
+  background-repeat: repeat, no-repeat;
 `;
 
 // export const RevealP = styled.div`

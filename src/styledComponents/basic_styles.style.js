@@ -1,15 +1,6 @@
-/**/
-.container {
-  width: 100%;
-  height: 100%;
-  position: relative;
-  display: flex;
-  align-items: flex-start;
-  flex-direction: row;
-  font-family: "Source Sans Pro", "sans-serif";
-}
+import styled, { css } from 'styled-components';
 
-.desc {
+export const Desc = styled.div`
   color: #323d42;
   font-weight: 300;
   width: 90%;
@@ -22,26 +13,37 @@
   text-align: center;
   font-size: 16px;
   line-height: 25px;
-}
 
-h3 {
+  @media (min-width: 450px) {
+    padding: 25px 24px;
+    font-size: 18px;
+    line-height: 27px;
+  }
+`;
+
+export const H3 = styled.p`
   color: #323d42;
   font-size: 25px;
   letter-spacing: -1.5px;
   font-weight: 900;
   margin-bottom: 22px;
-}
 
-.main-background {
+  @media (min-width: 450px) {
+    font-size: 35px;
+    letter-spacing: -2.5px;
+  }
+`;
+
+export const MainBackground = styled.div`
   height: 100vh;
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-}
+`;
 
-.arrow {
+export const Arrow = styled.div`
   -moz-transition: background-color 0.2s ease-in-out;
   -webkit-transition: background-color 0.2s ease-in-out;
   -ms-transition: background-color 0.2s ease-in-out;
@@ -53,42 +55,22 @@ h3 {
   background-position: center;
   background-repeat: no-repeat;
   overflow: hidden;
-}
 
-/**/
-.arrow:hover {
-  background-color: rgba(255, 255, 255, 0.1);
-}
+  @media (min-width: 450px) {
+    height: 6em;
+    width: 6em;
+    background-size: 48px;
+  }
+`;
 
-.arrow-bottom {
+export const BottomArrow = styled(Arrow)`
   display: none;
   border-radius: 3em 3em 0 0;
   position: absolute;
   bottom: 0;
   border-bottom: none;
-}
 
-@media (min-width: 450px) {
-  .desc {
-    padding: 25px 24px;
-    font-size: 18px;
-    line-height: 27px;
-  }
-
-  h3 {
-    font-size: 35px;
-    letter-spacing: -2.5px;
-  }
-
-  .arrow {
-    height: 6em;
-    width: 6em;
-    background-size: 48px;
-  }
-}
-
-@media (min-width: 650px) {
-  .arrow-bottom {
+  @media (min-width: 650px) {
     display: block;
   }
-}
+`;

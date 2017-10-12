@@ -6,7 +6,7 @@ import { HashHistory } from 'react-router';
 import Header from './components/header';
 import Intro from './components/intro';
 import WhatIDo from './components/what_i_do';
-import WhoIAm from './components/who_i_am/who_i_am';
+import WhoIAm from './components/who_i_am';
 import Gallery from './components/gallery';
 import Contact from './components/contact';
 import Footer from './components/footer';
