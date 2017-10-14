@@ -13,11 +13,28 @@ export const Desc = styled.div`
   text-align: center;
   font-size: 16px;
   line-height: 25px;
+  margin: auto;
 
   @media (min-width: 450px) {
     padding: 25px 24px;
     font-size: 18px;
     line-height: 27px;
+  }
+
+  @media (min-width: 737px) {
+    position: absolute;
+    background-color: white;
+    top: calc(50% - 200px);
+    right: 0;
+    width: 65%;
+    height: 400px;
+    padding: 40px;
+    transform-origin: right;
+    transform: rotateY(0deg);
+    transition: transform 1.75s;
+    ${({ hide }) => hide && css`
+      transform: rotateY(90deg);
+    `}
   }
 `;
 

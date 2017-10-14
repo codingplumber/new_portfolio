@@ -1,4 +1,5 @@
 import React from 'react';
+import WhenInView from './waypoint';
 import {
   ContactBackground,
   ContactH3,
@@ -14,25 +15,29 @@ const Contact = () => {
   return (
     <ContactBackground>
       <ContactH3>Say Hello.</ContactH3>
-      <Box>
-        <form
-          style={{width: 100 + '%'}}
-          method="post" action="https://formspree.io/jason.stickel@live.com"
-        >
+      <WhenInView>
+        {({ isInView }) =>
+        <Box hide={!isInView}>
+          <form
+            style={{width: 100 + '%'}}
+            method="post" action="https://formspree.io/jason.stickel@live.com"
+          >
 
-          <UserInfo>
-            <Field type="text" name="name" placeholder="Name" />
+            <UserInfo>
+              <Field type="text" name="name" placeholder="Name" />
 
-            <Field type="email" name="_replyto" placeholder="Email" />
-          </UserInfo>
+              <Field type="email" name="_replyto" placeholder="Email" />
+            </UserInfo>
 
-          <TextBox className="field" name="message" placeholder="Message" rows="6" />
+            <TextBox className="field" name="message" placeholder="Message" rows="6" />
 
-          <BtnContainer>
-            <Button type="submit" value="Send Message" />
-          </BtnContainer>
-        </form>
-      </Box>
+            <BtnContainer>
+              <Button type="submit" value="Send Message" />
+            </BtnContainer>
+          </form>
+        </Box>
+      }
+    </WhenInView>
     </ContactBackground>
   );
 }

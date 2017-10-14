@@ -6,6 +6,10 @@ export const WhatBackground = styled(MainBackground)`
   background: url(".././images/overlay.png"), url(".././images/what-i-do.jpg");
   background-size: cover;
   background-repeat: repeat, no-repeat;
+
+  @media (min-width: 737px) {
+    position: relative;
+  }
 `;
 
 export const Ul = styled.span`

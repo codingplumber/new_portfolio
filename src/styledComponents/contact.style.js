@@ -10,11 +10,21 @@ export const ContactBackground = styled.div`
   align-items: center;
   flex-direction: column;
   background-color: #f5f6f7;
+
+  @media (min-width: 737px) {
+    position: relative;
+    height 500px;
+  }
 `;
 
 export const ContactH3 = styled(H3)`
   padding: 25px 0 40px 0;
   margin-bottom: 0;
+
+  @media (min-width: 737px) {
+    position: absolute;
+    top: 0px;
+  }
 `;
 
 export const Box = styled.div`
@@ -33,6 +43,21 @@ export const Box = styled.div`
   padding: 15px 15px 35px 15px;
   background: #ffffff;
   color: #39454b;
+
+  @media (min-width: 737px) {
+    height: 400px;
+    width: 700px;
+    position: absolute;
+    bottom: 0;
+    right: calc(50% - 350px);
+    margin: auto;
+    transform-origin: bottom;
+    transform: rotateX(0deg);
+    transition: transform 1.75s;
+    ${({ hide }) => hide && css`
+      transform: rotateX(90deg);
+    `}
+  }
 `;
 
 export const UserInfo = styled.div`
@@ -84,6 +109,10 @@ export const TextBox = styled.textarea`
   color: #323d42;
   height: 170px;
   resize: none;
+
+  @media (min-width: 737px) {
+    height: 215px;
+  }
 `;
 
 export const BtnContainer = styled.div`
