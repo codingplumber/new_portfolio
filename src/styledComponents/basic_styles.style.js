@@ -72,6 +72,7 @@ export const Arrow = styled.div`
   background-position: center;
   background-repeat: no-repeat;
   overflow: hidden;
+  cursor: pointer;
 
   &:hover {
     background-color: rgba(255, 255, 255, 0.1);

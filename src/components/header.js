@@ -1,27 +1,25 @@
 import React from 'react';
-import { Link } from 'react-router';
+// import { BrowserRouter, Route, Switch, Link } from 'react-router-dom';
 import {
   HeaderContainer,
   HeaderName,
   HeaderLinks,
   List,
   Item
-} from '.././styledComponents/header.style'
+} from '.././styledComponents/header.style';
 
 const header = (props) => {
+  console.log(props.toScroll);
   return (
     <HeaderContainer>
-      <HeaderName>
-        Jason Stickel
-      </HeaderName>
-
+      <HeaderName>Jason Stickel</HeaderName>
       <HeaderLinks>
         <List>
-          <Item>Intro</Item>
-          <Item to="/what_i_do">What I do</Item>
-          <Item to="/who_i_am">Who I am</Item>
-          <Item to="/gallery">My Work</Item>
-          <Item to="/contact">Contact</Item>
+          <Item onClick={() => props.toScroll('intro')}>Intro</Item>
+          <Item onClick={() => props.toScroll('what')}>What I do</Item>
+          <Item onClick={() => props.toScroll('who')}>Who I am</Item>
+          <Item onClick={() => props.toScroll('gallery')}>My Work</Item>
+          <Item onClick={() => props.toScroll('contact')}>Contact</Item>
         </List>
       </HeaderLinks>
     </HeaderContainer>

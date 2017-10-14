@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
-import SmoothScroll from 'react-smooth-scroll';
-import { HashHistory } from 'react-router';
+
 
 import Header from './components/header';
 import Intro from './components/intro';
@@ -19,6 +18,7 @@ class App extends Component {
 
     this.closeModal = this.closeModal.bind(this);
     this.openModal = this.openModal.bind(this);
+    this.toScroll = this.toScroll.bind(this);
 
     this.state = {
       open: false,
@@ -38,6 +38,11 @@ class App extends Component {
     });
   }
 
+  toScroll(location) {
+    const element = document.getElementById(location)
+    element.scrollIntoView({behavior: "smooth"});
+  }
+
   render() {
     const show = {
       display: 'block'
@@ -47,27 +52,71 @@ class App extends Component {
     };
     return (
       <div>
-        <div             style={this.state.open === false ? hide : show}>
+        <div style={this.state.open === false ? hide : show}>
           <Modal
             value={this.state.open}
             closeModal={this.closeModal}
             project={this.state.selectedProject}
           />
         </div>
-        <Header />
-        <Intro />
-        <WhatIDo id="whatIDo" />
-        <WhoIAm />
-        <Gallery
-          value={this.state.open}
-          projects={this.state.projects}
-          openModal={this.openModal}
-        />
-        <Contact />
+        <Header toScroll={this.toScroll} />
+        <div id="intro">
+          <Intro toScroll={this.toScroll} />
+        </div>
+        <div id="what">
+          <WhatIDo toScroll={this.toScroll} />
+        </div>
+        <div id="who">
+          <WhoIAm toScroll={this.toScroll} />
+        </div>
+        <div id="gallery">
+          <Gallery
+            value={this.state.open}
+            projects={this.state.projects}
+            openModal={this.openModal}
+          />
+        </div>
+        <div id="contact">
+          <Contact />
+        </div>
         <Footer />
       </div>
     );
   }
 }
+
+
+  // componentDidMount() {
+  //   Events.scrollEvent.register('begin', function() {
+  //     console.log('begin', arguments);
+  //   });
+  //
+  //   Events.scrollEvent.register('end', function() {
+  //     console.log('end', arguments);
+  //   });
+  //
+  //   scrollSpy.update();
+  // }
+  //
+  // scrollToTop() {
+  //   scroll.scrollToTop();
+  // }
+  //
+  // componentWillUnmount() {
+  //   Events.scrollEvent.remove('begin');
+  //   Events.scrollEvent.remove('end');
+  // }
+
+// <BrowserRouter>
+//   <div>
+//     <Header />
+//     <Route path="/intro" component={Intro} />
+//     <Route path="/whatIDo" component={WhatIDo} />
+//     <Route path="/whoIAm" component={WhoIAm} />
+//     <Route path="/gallery" component={Gallery} />
+//     <Route path="/contact" component={Contact} />
+//     <Footer />
+//   </div>
+// </BrowserRouter>
 
 ReactDOM.render(<App />, document.querySelector('.container'));

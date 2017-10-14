@@ -35,11 +35,9 @@
     "react-dom": "^0.14.9",
     "react-fontawesome": "^1.6.1",
     "react-motion": "^0.5.2",
-    "react-redux": "4.3.0",
-    "react-router": "^2.0.1",
-    "react-smooth-scroll": "^0.1.0",
+    "react-router": "^4.2.0",
+    "react-router-dom": "^4.2.2",
     "react-waypoint": "^7.3.1",
-    "redux": "^2.0.0",
     "styled-components": "^2.2.1"
   },
   "bugs": {

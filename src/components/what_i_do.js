@@ -7,7 +7,7 @@ import {
 } from '.././styledComponents/basic_styles.style';
 import { WhatBackground, Ul } from '.././styledComponents/what_i_do.style';
 
-const WhatIDo = () => {
+const WhatIDo = (props) => {
   return (
     <WhatBackground>
       <WhenInView>
@@ -19,7 +19,7 @@ const WhatIDo = () => {
           </Desc>
         }
       </WhenInView>
-      <BottomArrow />
+      <BottomArrow onClick={() => props.toScroll('who')} />
     </WhatBackground>
   );
 }

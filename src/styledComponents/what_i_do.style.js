@@ -6,6 +6,7 @@ export const WhatBackground = styled(MainBackground)`
   background: url(".././images/overlay.png"), url(".././images/what-i-do.jpg");
   background-size: cover;
   background-repeat: repeat, no-repeat;
+  background-attachment: fixed;
 
   @media (min-width: 737px) {
     position: relative;

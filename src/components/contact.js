@@ -13,7 +13,7 @@ import {
 
 const Contact = () => {
   return (
-    <ContactBackground>
+    <ContactBackground  id="contact">
       <ContactH3>Say Hello.</ContactH3>
       <WhenInView>
         {({ isInView }) =>

@@ -5,6 +5,7 @@ export const WhoBackground = styled(WhatBackground)`
   background: url(".././images/overlay.png"), url(".././images/who-i-am.jpg");
   background-size: cover;
   background-repeat: repeat, no-repeat;
+  background-attachment: fixed;
 `;
 
 export const RevealP = styled.p`

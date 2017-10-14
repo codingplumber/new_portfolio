@@ -6,6 +6,7 @@ export const IntroBackground = styled(MainBackground)`
   background: url(".././images/overlay.png"), url(".././images/intro.jpg");
   background-size: cover;
   background-repeat: repeat, no-repeat;
+  background-attachment: fixed;
   color: #ffffff;
 
   @media (min-width: 450px) {

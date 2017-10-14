@@ -36,12 +36,12 @@ export const HeaderLinks = styled.div`
   }
 `;
 
-export const List = styled.ul`
+export const List = styled.div`
   display: flex;
   justify-content: space-between;
 `;
 
-export const Item = styled.li`
+export const Item = styled.p`
   -moz-transition: background-color 0.2s ease-in-out;
   -webkit-transition: background-color 0.2s ease-in-out;
   -ms-transition: background-color 0.2s ease-in-out;
