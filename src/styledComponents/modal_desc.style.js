@@ -1,7 +1,10 @@
 import styled, { css } from 'styled-components';
 
 export const ModalDescBackground = styled.div`
-  width: 80%;
+  width: 100%;
+
+
+
   padding: 20px 20px;
   background-color: #fff;
   line-height: 22px;

@@ -3,10 +3,12 @@ import styled, { css } from 'styled-components';
 export const ModalBackground = styled.div`
   height: 100%;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.75);
+  background-color: rgba(0, 0, 0, 0.85);
   position: fixed;
   z-index: 100;
   display: flex;
+  justify-content: center;
+  padding: 5%;
 `;
 
 export const Close = styled.div`
@@ -46,6 +48,8 @@ export const Content = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
+    max-width: 60%;
+    height: auto;
   }
 `;
 
@@ -54,9 +58,12 @@ export const Image = styled.img`
 
   @media (min-width: 650px) {
     display: block;
-    width: 80%;
+    width: 100%;
     height: auto;
     border-radius: 5px;
     margin-bottom: 15px;
+
+    // height: 60%;
+    // width: auto;
   }
 `;

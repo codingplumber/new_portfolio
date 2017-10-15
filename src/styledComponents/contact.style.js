@@ -13,7 +13,7 @@ export const ContactBackground = styled.div`
 
   @media (min-width: 737px) {
     position: relative;
-    height 500px;
+    height 515px;
   }
 `;
 

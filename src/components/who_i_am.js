@@ -1,7 +1,7 @@
-import React, { Component, PropTypes } from 'react';
+import React from 'react';
 import WhenInView from './waypoint';
 import {
-  Desc,
+  Desc2,
   H3,
   BottomArrow
 } from '.././styledComponents/basic_styles.style';
@@ -12,13 +12,13 @@ const WhoIAm = (props) => {
     <WhoBackground>
       <WhenInView>
         {({ isInView }) =>
-          <Desc hide={!isInView}>
+          <Desc2 hide={!isInView}>
             <H3>Who I am</H3>
             <p>Hi, I'm Jason. I'm a newly minted full-stack JavaScript programmer temporarily based in Chattanooga, TN. I'm a former plumber, turned military contractor, turned plumber again that had a desire to learn to code. I started with Python while in Community College, and some time later transitioned into JavaScript. I soon realized it was going to take me quite a while to reach the skill level needed to develop web pages professionally; so, I enrolled in DevMountain coding bootcamp in Provo, UT. It was one of the best decisions I ever made.</p>
-          </Desc>
+          </Desc2>
         }
       </WhenInView>
-      <BottomArrow onClick={() => this.props.toScroll('gallery')} />
+      <BottomArrow onClick={() => props.toScroll('gallery')} />
     </WhoBackground>
   );
 }

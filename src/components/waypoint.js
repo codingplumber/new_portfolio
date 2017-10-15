@@ -1,4 +1,4 @@
-import React, { Component, PropTypes } from 'react';
+import React, { Component } from 'react';
 import Waypoint from 'react-waypoint';
 
 class WhenInView extends Component {
@@ -18,7 +18,6 @@ class WhenInView extends Component {
       this.setState({
         isInView: true
       });
-      console.log(previousPosition);
     }
   }
 

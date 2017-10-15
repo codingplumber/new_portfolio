@@ -1,5 +1,4 @@
 import React from 'react';
-// import { BrowserRouter, Route, Switch, Link } from 'react-router-dom';
 import {
   HeaderContainer,
   HeaderName,
@@ -9,7 +8,6 @@ import {
 } from '.././styledComponents/header.style';
 
 const header = (props) => {
-  console.log(props.toScroll);
   return (
     <HeaderContainer>
       <HeaderName>Jason Stickel</HeaderName>

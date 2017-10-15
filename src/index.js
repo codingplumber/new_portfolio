@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
-
-
 import Header from './components/header';
 import Intro from './components/intro';
 import WhatIDo from './components/what_i_do';
@@ -84,39 +82,5 @@ class App extends Component {
     );
   }
 }
-
-
-  // componentDidMount() {
-  //   Events.scrollEvent.register('begin', function() {
-  //     console.log('begin', arguments);
-  //   });
-  //
-  //   Events.scrollEvent.register('end', function() {
-  //     console.log('end', arguments);
-  //   });
-  //
-  //   scrollSpy.update();
-  // }
-  //
-  // scrollToTop() {
-  //   scroll.scrollToTop();
-  // }
-  //
-  // componentWillUnmount() {
-  //   Events.scrollEvent.remove('begin');
-  //   Events.scrollEvent.remove('end');
-  // }
-
-// <BrowserRouter>
-//   <div>
-//     <Header />
-//     <Route path="/intro" component={Intro} />
-//     <Route path="/whatIDo" component={WhatIDo} />
-//     <Route path="/whoIAm" component={WhoIAm} />
-//     <Route path="/gallery" component={Gallery} />
-//     <Route path="/contact" component={Contact} />
-//     <Footer />
-//   </div>
-// </BrowserRouter>
 
 ReactDOM.render(<App />, document.querySelector('.container'));

@@ -10,7 +10,11 @@ export const IntroBackground = styled(MainBackground)`
   color: #ffffff;
 
   @media (min-width: 450px) {
-    padding: 20% 8% 0 8%;
+    padding: 8% 8% 0 8%;
+  }
+
+  @media (min-width: 737px) {
+    padding: 5% 8% 0 8%;
   }
 `;
 
@@ -24,6 +28,12 @@ export const Name = styled.p`
     font-size: 70px;
     letter-spacing: -3.5px;
   }
+
+  @media (min-width: 737px) {
+    font-size: 95px;
+    letter-spacing: -6px;
+    margin-bottom: 27px;
+  }
 `;
 
 export const Title = styled.p`
@@ -32,6 +42,11 @@ export const Title = styled.p`
 
   @media (min-width: 450px) {
     font-size: 24px;
+  }
+
+  @media (min-width: 737px) {
+    font-size: 28px;
+    margin-bottom: 27px;
   }
 `;
 
@@ -46,8 +61,17 @@ export const Techs = styled.p`
     font-size: 20px;
     margin-bottom: 44px;
   }
+
+  @media (min-width: 737px) {
+    font-size: 24px;
+    margin-bottom: 55px;
+  }
 `;
 
 export const IntroArrow = styled(Arrow)`
   border-radius: 3em;
+
+  @media (min-width: 737px) {
+    border-radius: 4em;
+  }
 `;

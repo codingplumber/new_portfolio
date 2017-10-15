@@ -23,6 +23,7 @@ export const Desc = styled.div`
 
   @media (min-width: 737px) {
     position: absolute;
+    line-height: 33px;
     background-color: white;
     top: calc(50% - 200px);
     right: 0;
@@ -38,6 +39,14 @@ export const Desc = styled.div`
   }
 `;
 
+export const Desc2 = styled(Desc)`
+  @media (min-width: 737px) {
+    right: auto;
+    left: 0;
+    transform-origin: left;
+  }
+`;
+
 export const H3 = styled.p`
   color: #323d42;
   font-size: 25px;
@@ -48,6 +57,12 @@ export const H3 = styled.p`
   @media (min-width: 450px) {
     font-size: 35px;
     letter-spacing: -2.5px;
+  }
+
+  @media (min-width: 737px) {
+    font-size: 48px;
+    letter-spacing: -3px;
+    margin-bottom: 36px;
   }
 `;
 
@@ -83,6 +98,12 @@ export const Arrow = styled.div`
     width: 6em;
     background-size: 48px;
   }
+
+  @media (min-width: 737px) {
+    height: 7em;
+    width: 7em;
+    background-size: 58px;
+  }
 `;
 
 export const BottomArrow = styled(Arrow)`
@@ -94,5 +115,9 @@ export const BottomArrow = styled(Arrow)`
 
   @media (min-width: 650px) {
     display: block;
+  }
+
+  @media (min-width: 737px) {
+    border-radius: 4em 4em 0 0;
   }
 `;
