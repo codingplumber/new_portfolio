@@ -31,7 +31,7 @@ class WhenInView extends Component {
 
   render() {
     return (
-      <div>
+      <div style={{width: 100 + '%'}}>
         <Waypoint
           onEnter={this.onEnter}
           onLeave={this.onLeave}

@@ -20,6 +20,7 @@ export const ContactBackground = styled.div`
 export const ContactH3 = styled(H3)`
   padding: 25px 0 40px 0;
   margin-bottom: 0;
+  text-align: center;
 
   @media (min-width: 737px) {
     position: absolute;
@@ -40,6 +41,7 @@ export const Box = styled.div`
   width: 90%;
   display: flex;
   justify-content: center;
+  margin-left: 5%;
   padding: 15px 15px 35px 15px;
   background: #ffffff;
   color: #39454b;

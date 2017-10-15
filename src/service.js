@@ -7,6 +7,13 @@ module.exports = [
     desc: 'A fully responsive site for The Battlefield Pilot Club.'
   },
   {
+    name: 'Anytime Fitness Clone',
+    img: '.././images/gallery/anytime_fitness.png',
+    link: 'http://dixiechickenclone.jasonstickel.com/#!/',
+    tech: 'AngularJS, jQuery, HTML, CSS',
+    desc: 'A clone of the Anytime Fitness website. This site is not fully responsive, and has different home screens and navigation bars depending on view size.'
+  },
+  {
     name: 'Dixie Chicken Clone',
     img: '.././images/gallery/DixieChickenClone.png',
     link: 'http://dixiechickenclone.jasonstickel.com/#!/',

@@ -62,8 +62,5 @@ export const Image = styled.img`
     height: auto;
     border-radius: 5px;
     margin-bottom: 15px;
-
-    // height: 60%;
-    // width: auto;
   }
 `;
