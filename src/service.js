@@ -11,7 +11,7 @@ module.exports = [
     img: '.././images/gallery/anytime_fitness.png',
     link: 'http://dixiechickenclone.jasonstickel.com/#!/',
     tech: 'AngularJS, jQuery, HTML, CSS',
-    desc: 'A clone of the Anytime Fitness website. This site is not fully responsive, and has different home screens and navigation bars depending on view size.'
+    desc: 'A clone of the Anytime Fitness website. This site is fully responsive, and has different home screens and navigation bars depending on view size. I cloned the home view, the training view, and the why join view.'
   },
   {
     name: 'Dixie Chicken Clone',
